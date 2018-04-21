@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Verification</title>
+	</head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<body>
+		<div id='h1'>
+			<h1 >Enter your number</h1>
+			<input id='i1' type='text' >
+			<button id='b1'>Submit</button>
+			
+
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#b1').click(function() {
+				var num= /[0-9]{10}/;
+				var inp= $('#i1').val();
+				
+				if (inp.match(num)) {
+					return true;
+				} else {
+					alert('sorry');
+					return false;
+				}
+			});
+			
+		});
+
+	</script>
+</html>

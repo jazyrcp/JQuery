@@ -11,6 +11,10 @@
 		<div>
 			<button id="b1">Hide</button>
 			<button id="b2">Show</button>
+			<input id='r1' type="text">
+			<form id="i1">
+			<p >HEllo...................</p>
+			</form>
 			<p id='tst1'>helllo!!!!!!!!!!!!!!!!!!!!1</p>
 		</div>
 	</body>
@@ -25,14 +29,16 @@
 				$('#tst1').show();
 
 			});
-			// $('#b2').mousedown(function(){
-			// 	alert("this is b2");
+			$('#i1').focus(function(){
+				$('this').css('background-color','#cccccc');
+			});
+			$('#i1').blur(function(){
+				$('this').css('background-color','cyan');
+			});
+			$('#r1').keypress(function(){
+				alert("key pressed");
 
-			// });
-			// $('#b1').mouseleave(function(){
-			// 	alert("you left b1");
-
-			// });
+			});
 			// $('#b1').mouseenter(function(){
 			// 	alert("this is b1");
 

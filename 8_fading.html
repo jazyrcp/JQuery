@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Fade effects</title>
+	</head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<body>
+			<button id='b1'>Click</button>
+		<div id='h1'>
+			<h1 >Hello</h1>
+			
+
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#b1').click(function() {
+				$('#h1').fadeOut(3000);	
+			});
+			$('#b1').keypress(function() {
+				$('#h1').fadeIn(3000);	
+			});	
+			$('#b1').mousedown(function() {
+				$('#h1').fadeToggle(3000);	
+			});
+			$('#b1').dblclick(function() {
+				$('#h1').fadeTo("slow",0.45);	
+			});
+			
+		});
+
+	</script>
+</html>

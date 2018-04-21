@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>settimeout</title>
+	</head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<body>
+		<div class="container">
+			<p>Hello</p>
+			<div id='al' class="alert alert-success">
+				<p><strong>Alert</strong> This is an alert</p>
+			</div>
+			<label for="c1">Select</label>
+			<input id="c1" type="checkbox">
+			
+			
+			
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(document).ready(function() {
+
+			$('#al').hide();
+			$('input:first').click(function() {
+				
+				$('#al').show();
+				
+			});
+			$('input:first').change(function() {
+				
+				setTimeout(function(){ $('#al').hide(); },3000);
+				
+			});
+			
+		});
+
+	</script>
+</html>
