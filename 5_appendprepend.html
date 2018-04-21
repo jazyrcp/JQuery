@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Append&prepend</title>
+	</head>
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<body>
+		<div>
+			<p>HEllo</p>
+			<button id='b1'>Click</button>
+			<button id='b2'>Click</button>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#b1').click(function(){
+				$('p').append('How are you');
+				$('p').after('How are you');
+			});
+			$('#b2').click(function(){
+				$('p').prepend('Hi');
+				$('p').before('Hi');
+			});
+			
+		});
+
+
+	</script>
+</html>

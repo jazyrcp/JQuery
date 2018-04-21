@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>ADDclass</title>
+	</head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<style type="text/css">
+		.sett{
+			background-color: red;
+			border: solid cyan 5px;
+		}
+
+
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<body>
+		<div>
+			<p>HEllo</p>
+			<button id='b1'>Add Class</button>
+			<button id='b2'>Remove Class</button>
+			<button id='b3'>Custom Class</button>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#b1').click(function(){
+				$('p').addClass('jumbotron');
+			});
+			$('#b2').click(function(){
+				$('p').removeClass('jumbotron');
+			});
+			$('#b3').click(function(){
+				$('p').addClass('sett');
+			});
+			
+		});
+
+
+	</script>
+</html>

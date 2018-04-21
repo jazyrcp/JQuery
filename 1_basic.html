@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>JQuery</title>
+		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+	</head>
+	<body>
+		<div>
+			<button id="b1">Hide</button>
+			<button id="b2">Show</button>
+			<p id='tst1'>helllo!!!!!!!!!!!!!!!!!!!!1</p>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			$('#b1').click(function(){
+				$('#tst1').hide();
+
+			});
+			$('#b1').dblclick(function(){
+				$('#tst1').show();
+
+			});
+			// $('#b2').mousedown(function(){
+			// 	alert("this is b2");
+
+			// });
+			// $('#b1').mouseleave(function(){
+			// 	alert("you left b1");
+
+			// });
+			// $('#b1').mouseenter(function(){
+			// 	alert("this is b1");
+
+			// });
+			// $('#b1').hover(function(){
+			// 	alert("this is b1");
+			// 	}, function() {
+			// 		alert("you left b1");
+			// });
+			
+
+
+
+		});
+
+
+
+
+	</script>
+</html>

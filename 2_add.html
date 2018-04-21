@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Add</title>
+		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+	</head>
+	<body>
+		<div>
+			<p id='tst1'>Enter the Numbers</p><br>
+			<input type="text" id="i1" placeholder="number">
+			<input type="text" id="i2" placeholder="number"><br>
+			<button id="b1">ADD</button><br>
+			<input type="text" id="i3" placeholder="result">
+		</div>
+	</body>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('#b1').click(function() 
+				{
+					var x= $('#i1').val();
+					var y=$('#i2').val();
+					var res= parseInt(x) + parseInt(y);
+					$('#i3').val(res);
+
+				});
+
+
+			});
+
+
+
+		</script>
+</html>
